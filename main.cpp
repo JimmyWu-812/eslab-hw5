@@ -19,16 +19,16 @@ int main()
     while(true){
         sensor_value = BSP_TSENSOR_ReadTemp();
         printf("\nTEMPERATURE = %.2f degC\n", sensor_value);
-        if(sensor_value > 50){
+        if(sensor_value > 34){
             led.period(0.25f);      // 4 second period
         }
-        else if(sensor_value > 40){
+        else if(sensor_value > 33.5){
             led.period(0.5f);      // 4 second period
         }
-        else if(sensor_value > 30){
+        else if(sensor_value > 33){
             led.period(1.0f);      // 4 second period
         }
-        else if(sensor_value > 20){
+        else if(sensor_value > 32.5){
             led.period(2.0f);      // 4 second period
         }
         led.write(0.50f);      // 50% duty cycle, relative to period
