@@ -38,3 +38,22 @@ int main()
     //led.pulsewidth(2);   // alternative to led.write, set duty cycle time in seconds
     // while (1);
 }
+
+
+// #include "mbed.h"
+// PwmOut led_main(D3);
+// PwmOut led_t(D10);
+// void t1(){
+//     led_t.period(0.5f);
+//     led_t.write(0.4f);
+// }
+// void t2(){
+//     led_main.period(0.5f);
+//     led_main.write(0.4f);
+// }
+// int main(){
+//     EventQueue queue;
+//     queue.call_in(0, t1);
+//     queue.call_in(250, t2);
+//     queue.dispatch_forever();
+// }
